@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      DiaPro - Natural Solution for Type 1 & Type 2 Diabetes | NAFDAC Approved
+    </title>
+    <meta
+      name="description"
+      content="DiaPro: NAFDAC & FDA approved natural treatment for Type 1 and Type 2 diabetes. Lower blood sugar, regulate insulin, prevent complications. See results in 10 days. Money-back guarantee."
+    />
+    <link rel="stylesheet" href="diapro-style.css" />
+  </head>
+  <body>
+    <!-- Live Visitor Counter Bar -->
+    <div class="visitor-counter">
+      <span class="pulse-dot"></span>
+      <span id="visitorCount">52</span> people are viewing this page right now
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/2347050362587?text=Hello,%20I%20want%20to%20order%20DiaPro"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+    >
+      <span class="whatsapp-text">Order on WhatsApp</span>
+      <span class="whatsapp-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+          />
+        </svg>
+      </span>
+    </a>
+
+    <!-- Order Notification Popup -->
+    <div class="order-notification" id="orderNotification">
+      <div class="notification-content">
+        <span class="notification-icon">👤</span>
+        <div class="notification-text">
+          <strong id="notificationName">Musa from Kano</strong>
+          <span id="notificationOrder">just ordered 3 Bottles + Diet Plan</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discount Modal -->
+    <div class="modal-overlay" id="discountModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <h2>🎉 LIMITED TIME OFFER!</h2>
+                <p class="modal-subtitle">One-Time Discount for New Customers</p>
+            </div>
+            <div class="modal-body">
+                <div class="countdown-timer">
+                    <p>This offer expires in:</p>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span id="hours">03</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-separator">:</div>
+                        <div class="timer-unit">
+                            <span id="minutes">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-separator">:</div>
+                        <div class="timer-unit">
+                            <span id="seconds">33</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-pricing">
+                    <div class="price-item">
+                        <span class="package-name">1 Bottle</span>
+                        <span class="old-price">₦30,000</span>
+                        <span class="new-price">₦25,000</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="package-name">2 Bottles + Diet Plan</span>
+                        <span class="old-price">₦45,000</span>
+                        <span class="new-price">₦40,000</span>
+                    </div>
+                    <div class="price-item featured">
+                        <span class="badge">MOST POPULAR</span>
+                        <span class="package-name">3 Bottles + Diet Plan</span>
+                        <span class="old-price">₦55,000</span>
+                        <span class="new-price">₦50,000</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="package-name">4 Bottles + Diet Plan</span>
+                        <span class="old-price">₦70,000</span>
+                        <span class="new-price">₦65,000</span>
+                    </div>
+                </div>
+                <a href="#order-form" class="modal-cta">Claim My Discount Now</a>
+                <p class="modal-guarantee">✓ Money-Back Guarantee • ✓ NAFDAC & FDA Approved</p>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              Take Control of Your Diabetes
+              <span class="highlight">Naturally</span>
+            </h1>
+            <p class="hero-subtitle">
+              NAFDAC & FDA Approved • Clinically Tested • 100% Natural
+              Ingredients
+            </p>
+            <p class="hero-description">
+              DiaPro is a revolutionary natural treatment that lowers blood
+              sugar, regulates insulin, and prevents dangerous complications—for
+              both Type 1 and Type 2 diabetes. No harmful side effects, no
+              dependency, just real results.
+            </p>
+
+            <div class="trust-badges">
+              <div class="badge-item">✓ NAFDAC Approved</div>
+              <div class="badge-item">✓ FDA Certified</div>
+              <div class="badge-item">✓ Money-Back Guarantee</div>
+            </div>
+
+            <div class="hero-cta">
+              <a href="#order-form" class="btn-primary"
+                >Order Now - Limited Discount</a
+              >
+              <a href="tel:07050362587" class="btn-secondary"
+                >📞 Call: 07050362587</a
+              >
+            </div>
+
+            <p class="hero-assurance">
+              ✨ See visible changes within 10 days • Complete results in 30
+              days or less
+            </p>
+          </div>
+
+          <div class="hero-image">
+            <img src="Dia Pro Bottle. Design.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diabetes Education Section -->
+    <section class="education-section">
+      <div class="container">
+        <h2 class="section-title">Understanding Your Diabetes</h2>
+        <p class="section-intro">
+          If you're reading this, you're in the right place. Let's quickly
+          understand what type of diabetes you have:
+        </p>
+
+        <div class="diabetes-types">
+          <div class="type-card">
+            <h3>Type 1 Diabetes</h3>
+            <p>
+              <strong>What it is:</strong> Your pancreas produces little or no
+              insulin. This is usually diagnosed in childhood or early
+              adulthood, but can occur at any age.
+            </p>
+            <p>
+              <strong>Common signs:</strong> Frequent urination, extreme thirst,
+              constant hunger despite eating, unexplained weight loss, fatigue,
+              and blurred vision.
+            </p>
+            <p class="type-note">
+              ✓ DiaPro works effectively for Type 1 diabetes
+            </p>
+          </div>
+
+          <div class="type-card">
+            <h3>Type 2 Diabetes</h3>
+            <p>
+              <strong>What it is:</strong> Your body doesn't use insulin
+              properly (insulin resistance). This is the most common type,
+              usually developing after age 45, but increasingly affecting
+              younger people.
+            </p>
+            <p>
+              <strong>Common signs:</strong> Increased thirst and urination,
+              increased hunger, fatigue, blurred vision, slow-healing sores,
+              frequent infections, and tingling in hands or feet.
+            </p>
+            <p class="type-note">
+              ✓ DiaPro works effectively for Type 2 diabetes
+            </p>
+          </div>
+        </div>
+
+        <p class="education-cta">
+          <strong>Good News:</strong> DiaPro is specially formulated to work for
+          BOTH Type 1 and Type 2 diabetes. Regardless of your type, DiaPro can
+          help you manage and reverse your condition naturally.
+        </p>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+      <div class="container">
+        <h2 class="section-title">Are You Struggling With Any of These?</h2>
+        <div class="problem-grid">
+          <div class="problem-item">
+            <span class="problem-icon">🚽</span>
+            <h3>Frequent Urination</h3>
+            <p>Constantly running to the bathroom, especially at night</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">💧</span>
+            <h3>Excessive Thirst</h3>
+            <p>Always feeling thirsty no matter how much water you drink</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">😴</span>
+            <h3>Constant Fatigue</h3>
+            <p>Always tired and weak, even after resting</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">👁️</span>
+            <h3>Blurred Vision</h3>
+            <p>Difficulty seeing clearly, vision problems getting worse</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">🩹</span>
+            <h3>Slow Wound Healing</h3>
+            <p>Cuts and sores taking weeks or months to heal</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">⚖️</span>
+            <h3>Unexplained Weight Changes</h3>
+            <p>Sudden weight loss or gain without trying</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">🍽️</span>
+            <h3>Constant Hunger</h3>
+            <p>Always hungry even after eating full meals</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">🦶</span>
+            <h3>Numbness & Tingling</h3>
+            <p>Pins and needles sensation in hands and feet</p>
+          </div>
+        </div>
+        <p class="problem-highlight">
+          You're not alone. Over 3,200 diabetes patients have found relief with
+          DiaPro.
+        </p>
+      </div>
+    </section>
+
+    <!-- Complications Warning Section -->
+    <section class="complications-section">
+      <div class="container">
+        <h2 class="section-title danger-title">
+          ⚠️ The High Cost of Ignoring Diabetes
+        </h2>
+        <p class="complications-intro">
+          Every day you wait, the damage increases. Untreated or poorly managed
+          diabetes leads to life-threatening complications:
+        </p>
+
+        <div class="complications-grid">
+          <div class="complication-card severe">
+            <span class="complication-icon">🫘</span>
+            <h3>Kidney Failure</h3>
+            <p>
+              Diabetes is the #1 cause of kidney failure in Nigeria. Once your
+              kidneys fail, you'll need dialysis 3 times a week for life—or a
+              kidney transplant costing millions.
+            </p>
+          </div>
+
+          <div class="complication-card severe">
+            <span class="complication-icon">👁️‍🗨️</span>
+            <h3>Permanent Blindness</h3>
+            <p>
+              High blood sugar damages blood vessels in your eyes. Diabetic
+              retinopathy causes irreversible blindness—you could lose your
+              sight forever.
+            </p>
+          </div>
+
+          <div class="complication-card severe">
+            <span class="complication-icon">🦵</span>
+            <h3>Amputation</h3>
+            <p>
+              Poor circulation and nerve damage lead to foot ulcers and
+              infections. Thousands of Nigerians lose their legs, feet, or toes
+              to diabetes every year.
+            </p>
+          </div>
+
+          <div class="complication-card">
+            <span class="complication-icon">❤️‍🩹</span>
+            <h3>Heart Attack & Stroke</h3>
+            <p>
+              Diabetes doubles your risk of heart disease and stroke. These can
+              strike suddenly and be fatal.
+            </p>
+          </div>
+
+          <div class="complication-card">
+            <span class="complication-icon">🧠</span>
+            <h3>Nerve Damage</h3>
+            <p>
+              Diabetic neuropathy causes unbearable pain, burning sensations,
+              and permanent nerve damage throughout your body.
+            </p>
+          </div>
+
+          <div class="complication-card">
+            <span class="complication-icon">💔</span>
+            <h3>Sexual Dysfunction</h3>
+            <p>
+              Diabetes damages nerves and blood vessels, causing erectile
+              dysfunction in men and reduced sensation in women.
+            </p>
+          </div>
+
+          <div class="complication-card">
+            <span class="complication-icon">🦠</span>
+            <h3>Frequent Infections</h3>
+            <p>
+              High blood sugar weakens your immune system, making you prone to
+              skin infections, gum disease, and UTIs.
+            </p>
+          </div>
+
+          <div class="complication-card">
+            <span class="complication-icon">💀</span>
+            <h3>Diabetic Coma & Death</h3>
+            <p>
+              Extremely high blood sugar can cause diabetic ketoacidosis or
+              hyperosmolar coma—both are medical emergencies that can be fatal.
+            </p>
+          </div>
+        </div>
+
+        <div class="urgency-box">
+          <h3>⏰ Time Is Running Out</h3>
+          <p>
+            These complications don't happen overnight, but they ARE happening
+            RIGHT NOW inside your body. Every day of high blood sugar causes
+            irreversible damage to your organs, nerves, and blood vessels.
+          </p>
+          <p class="urgency-highlight">
+            The longer you wait, the harder it becomes to reverse the damage.
+            Some complications become PERMANENT.
+          </p>
+        </div>
+
+        <div class="hope-transition">
+          <h3>But There's Hope...</h3>
+          <p>
+            You don't have to face these devastating complications. With DiaPro,
+            you can take control of your diabetes naturally and prevent these
+            life-threatening conditions before it's too late.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+      <div class="container">
+        <h2 class="section-title">
+          Introducing <span class="brand-highlight">DiaPro</span>
+        </h2>
+        <p class="section-subtitle">
+          The Natural, Clinically-Proven Solution That Works in 30 Days or Less
+        </p>
+
+        <div class="solution-content">
+          <div class="solution-image">
+            <img src="Dia Pro Retoch pic.jpg" alt="DiaPro product image" />
+          </div>
+
+          <div class="solution-text">
+            <div class="solution-intro">
+              <h3>Why DiaPro Works</h3>
+              <p>
+                Our unique formula combines 8 powerful natural ingredients,
+                scientifically shown to support healthy blood sugar control.
+              </p>
+
+              <ul class="benefits-list">
+                <li>Lower blood sugar levels naturally</li>
+                <li>Regulate insulin production and sensitivity</li>
+                <li>Support kidney, eye, nerve, and heart health</li>
+                <li>Boost energy and reduce fatigue</li>
+                <li>Effective for Type 1 and Type 2 diabetes support</li>
+                <li>Reduce dependence on medications</li>
+                <li>Promote healthy wound healing and circulation</li>
+                <li>Balance hormones and metabolism</li>
+              </ul>
+            </div>
+
+            <div class="ingredients-box">
+              <h3>8 Clinically-Tested Natural Ingredients</h3>
+
+              <ul class="ingredients-list">
+                <li>
+                  <strong>Iodine:</strong> Supports thyroid and metabolism
+                </li>
+                <li>
+                  <strong>Beta-Carotene:</strong> Protects cells from oxidative
+                  damage
+                </li>
+                <li>
+                  <strong>Antioxidants:</strong> Reduce inflammation and stress
+                </li>
+                <li>
+                  <strong>Iron:</strong> Aids oxygen flow and energy production
+                </li>
+                <li>
+                  <strong>Manganese:</strong> Supports insulin and glucose
+                  metabolism
+                </li>
+                <li><strong>Chromium:</strong> Improves insulin efficiency</li>
+                <li>
+                  <strong>Natural Insulin:</strong> Helps regulate blood glucose
+                </li>
+                <li>
+                  <strong>Herbal Roots:</strong> Traditional diabetes support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <h3>Your Journey to Freedom From Diabetes</h3>
+          <div class="timeline-item">
+            <div class="timeline-day">Day 1-10</div>
+            <div class="timeline-content">
+              <h4>Visible Changes Begin</h4>
+              <p>
+                Reduced thirst and urination, more energy, better sleep,
+                improved mood
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-day">Day 11-20</div>
+            <div class="timeline-content">
+              <h4>Blood Sugar Stabilizes</h4>
+              <p>
+                Blood glucose levels drop significantly, insulin sensitivity
+                improves, medication may be reduced
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-day">Day 21-30</div>
+            <div class="timeline-content">
+              <h4>Complete Transformation</h4>
+              <p>
+                Normal blood sugar levels, complications prevented, full energy
+                restored, diabetes under control or reversed
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Grid -->
+    <section class="benefits-section">
+      <div class="container">
+        <h2 class="section-title">Why Diabetes Patients Choose DiaPro</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🌿</div>
+            <h3>100% Natural</h3>
+            <p>No harmful chemicals or synthetic ingredients</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚕️</div>
+            <h3>Clinically Tested</h3>
+            <p>Proven effective in clinical trials</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">✅</div>
+            <h3>NAFDAC & FDA Approved</h3>
+            <p>Certified safe by regulatory bodies</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💉</div>
+            <h3>Reduces Insulin Dependency</h3>
+            <p>Stop or reduce painful daily injections</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Fast Results</h3>
+            <p>See changes within 10 days</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
+            <h3>No Side Effects</h3>
+            <p>Gentle on your body, powerful on diabetes</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🔬</div>
+            <h3>Works for Type 1 & 2</h3>
+            <p>Effective for all types of diabetes</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🚫</div>
+            <h3>Prevents Complications</h3>
+            <p>Stops kidney, eye, nerve, and heart damage</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💪</div>
+            <h3>Increases Energy</h3>
+            <p>Eliminate fatigue and weakness</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💊</div>
+            <h3>Reduces Medication</h3>
+            <p>Lower or eliminate expensive drugs</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🔄</div>
+            <h3>Reverses Diabetes</h3>
+            <p>Naturally restore your body's balance</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">❤️</div>
+            <h3>Improves Heart Health</h3>
+            <p>Reduces cardiovascular risk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stock Scarcity Alert -->
+    <div class="stock-alert">
+      <div class="container">
+        <span class="alert-icon">⚠️</span>
+        <span class="alert-text"
+          >Only <strong id="stockCount">12</strong> bottles left at discount
+          price!</span
+        >
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">Real Patients, Real Results</h2>
+        <div class="rating-summary">
+          <div class="stars">★★★★★</div>
+          <p><strong>4.9 out of 5</strong> from 3,241 satisfied customers</p>
+        </div>
+
+        <!-- Written Testimonials -->
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">MI</div>
+              <div class="testimonial-info">
+                <h4>Musa Ibrahim</h4>
+                <p class="location">Kano State</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "My blood sugar was 420 mg/dL and I was taking insulin 3 times
+              daily. After just 3 weeks on DiaPro, my blood sugar dropped to 130
+              mg/dL! My doctor reduced my insulin to once a day. I feel like a
+              new person!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">GA</div>
+              <div class="testimonial-info">
+                <h4>Grace Adebayo</h4>
+                <p class="location">Lagos</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "I was diagnosed with Type 2 diabetes 5 years ago. I tried
+              everything but nothing worked until DiaPro. Within 2 weeks, I
+              stopped feeling tired all the time. After 30 days, my blood sugar
+              normalized. No more medications!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card featured-testimonial">
+            <span class="featured-badge">LIFE-CHANGING</span>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">CO</div>
+              <div class="testimonial-info">
+                <h4>Chinedu Okafor</h4>
+                <p class="location">Enugu</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "I had diabetic neuropathy—the pain in my feet was unbearable.
+              Doctors said it was permanent. After 5 weeks on DiaPro, the
+              tingling stopped! My blood sugar went from 380 to 115. I avoided
+              amputation thanks to DiaPro!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">FY</div>
+              <div class="testimonial-info">
+                <h4>Fatima Yusuf</h4>
+                <p class="location">Abuja</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "My vision was getting blurry and I was scared of going blind.
+              DiaPro not only lowered my blood sugar from 350 to 120, but my
+              vision improved too! I can see clearly again without my glasses!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">AO</div>
+              <div class="testimonial-info">
+                <h4>Adewale Ogunleye</h4>
+                <p class="location">Ibadan</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "I have Type 1 diabetes and was injecting insulin 4 times a day
+              for 10 years. DiaPro reduced my dosage by 70%! My HbA1c went from
+              10.5% to 6.2% in just 6 weeks. This product is a miracle!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card featured-testimonial">
+            <span class="featured-badge">KIDNEY SAVED</span>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">BN</div>
+              <div class="testimonial-info">
+                <h4>Blessing Nwankwo</h4>
+                <p class="location">Port Harcourt</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "My doctor said my kidneys were failing due to diabetes and I'd
+              need dialysis soon. I started DiaPro and after 2 months, my kidney
+              function improved! My creatinine levels normalized. DiaPro
+              literally saved my kidneys!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">IA</div>
+              <div class="testimonial-info">
+                <h4>Ibrahim Abdullahi</h4>
+                <p class="location">Kaduna</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "I was spending over ₦50,000 monthly on diabetes drugs and still
+              suffering. DiaPro cost me ₦50,000 for 3 bottles and CURED my
+              diabetes! My blood sugar has been normal for 3 months now. Best
+              investment ever!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">NT</div>
+              <div class="testimonial-info">
+                <h4>Ngozi Temitope</h4>
+                <p class="location">Benin City</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "I had a diabetic foot ulcer that wouldn't heal for 8 months.
+              Doctors wanted to amputate. I tried DiaPro and within 4 weeks, the
+              wound started healing! After 2 months, it's completely healed. I
+              still have my foot!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card featured-testimonial">
+            <span class="featured-badge">MEDICATION-FREE</span>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">OE</div>
+              <div class="testimonial-info">
+                <h4>Oluchi Eze</h4>
+                <p class="location">Owerri</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "After 7 years on metformin and glibenclamide with terrible side
+              effects, DiaPro set me free! My blood sugar is now consistently
+              between 90-110. I haven't taken a single diabetes pill in 4
+              months. I'm officially diabetes-free!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">YM</div>
+              <div class="testimonial-info">
+                <h4>Yusuf Mohammed</h4>
+                <p class="location">Jos</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "The constant thirst and urination were ruining my life. I
+              couldn't sleep through the night. After 2 weeks on DiaPro, these
+              symptoms disappeared! My energy came back and I feel 20 years
+              younger!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">SA</div>
+              <div class="testimonial-info">
+                <h4>Seun Afolabi</h4>
+                <p class="location">Abeokuta</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "My sexual function was completely gone due to diabetes. It was
+              destroying my marriage. DiaPro not only controlled my blood sugar
+              but restored my manhood! My wife and I are happy again. Thank you
+              DiaPro!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">KA</div>
+              <div class="testimonial-info">
+                <h4>Kemi Adeyemi</h4>
+                <p class="location">Osogbo</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "I was pre-diabetic with blood sugar at 180. My doctor said I'd be
+              on medication for life within a year. I ordered DiaPro and after
+              30 days, my blood sugar is 95! I prevented full diabetes before it
+              was too late!"
+            </p>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+        </div>
+
+        <!-- WhatsApp Testimonials Section -->
+        <div class="whatsapp-testimonials">
+          <h3>Recent Customer Feedback on WhatsApp</h3>
+          <p class="section-note">
+            See what our customers are saying in real-time
+          </p>
+
+          <div class="whatsapp-grid">
+            <div class="whatsapp-placeholder">
+              <img src="BP5.webp" alt="" />
+            </div>
+
+            <div class="whatsapp-placeholder">
+              <img src="BP4.webp" alt="" />
+            </div>
+
+            <!-- <div class="whatsapp-placeholder">
+              <img src="BP.jpg" alt="" />
+            </div> -->
+
+            <!-- <div class="whatsapp-placeholder">
+              <img src="BP4.webp" alt="" />
+            </div>
+
+            <div class="whatsapp-placeholder">
+              <img src="BP4.webp" alt="" />
+            </div>
+
+            <div class="whatsapp-placeholder">
+              <img src="BP4.webp" alt="" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Choose Your Package</h2>
+        <p class="section-subtitle">
+          Limited Time Discount - Save Up to ₦5,000!
+        </p>
+
+        <div class="countdown-sticky">
+          <span>⏰ Discount ends in: </span>
+          <span class="timer-compact">
+            <span id="hoursSticky">03</span>:<span id="minutesSticky">45</span
+            >:<span id="secondsSticky">33</span>
+          </span>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Starter Package</h3>
+            <div class="package-contents">
+              <p>1 Bottle</p>
+              <p class="duration">(30-day supply)</p>
+            </div>
+            <div class="pricing">
+              <span class="old-price">₦30,000</span>
+              <span class="new-price">₦25,000</span>
+              <span class="savings">Save ₦5,000</span>
+            </div>
+            <a href="#order-form" class="btn-pricing">Order Now</a>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Value Package</h3>
+            <div class="package-contents">
+              <p>2 Bottles + Diet Plan</p>
+              <p class="duration">(60-day supply)</p>
+            </div>
+            <div class="pricing">
+              <span class="old-price">₦45,000</span>
+              <span class="new-price">₦40,000</span>
+              <span class="savings">Save ₦5,000</span>
+            </div>
+            <a href="#order-form" class="btn-pricing">Order Now</a>
+          </div>
+
+          <div class="pricing-card featured">
+            <div class="popular-badge">MOST POPULAR</div>
+            <h3>Complete Package</h3>
+            <div class="package-contents">
+              <p>3 Bottles + Diet Plan</p>
+              <p class="duration">(90-day supply)</p>
+            </div>
+            <div class="pricing">
+              <span class="old-price">₦55,000</span>
+              <span class="new-price">₦50,000</span>
+              <span class="savings">Save ₦5,000</span>
+            </div>
+            <a href="#order-form" class="btn-pricing">Order Now</a>
+            <p class="recommended">✨ Recommended for best results</p>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Premium Package</h3>
+            <div class="package-contents">
+              <p>4 Bottles + Diet Plan</p>
+              <p class="duration">(120-day supply)</p>
+            </div>
+            <div class="pricing">
+              <span class="old-price">₦70,000</span>
+              <span class="new-price">₦65,000</span>
+              <span class="savings">Save ₦5,000</span>
+            </div>
+            <a href="#order-form" class="btn-pricing">Order Now</a>
+          </div>
+        </div>
+
+        <div class="pricing-features">
+          <p>
+            ✓ Free Delivery Nationwide • ✓ Money-Back Guarantee • ✓ 24/7
+            Customer Support
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-form-section" id="order-form">
+      <div class="container">
+        <h2 class="section-title">Place Your Order Now</h2>
+        <p class="section-subtitle">
+          Fill the form below and we'll contact you to confirm your order
+        </p>
+
+        <div class="stock-warning">
+          ⚠️ Only <strong id="stockCountForm">8</strong> bottles left at
+          discount price - Order now!
+        </div>
+        <img style="width: 100%; height: 100%;" src="Dia Pro Bottle. pic.jpg" alt="">
+
+        <form
+          class="order-form"
+          id="orderFormElement"
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              required
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="deliveryAddress"
+              >Your Location / Delivery Address *</label
+            >
+            <textarea
+              id="deliveryAddress"
+              name="deliveryAddress"
+              required
+              placeholder="Enter your complete delivery address"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phoneNumber">Your Phone Number *</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                required
+                placeholder="08012345678"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNumberConfirm">Confirm Phone Number *</label>
+              <input
+                type="tel"
+                id="phoneNumberConfirm"
+                name="phoneNumberConfirm"
+                required
+                placeholder="08012345678"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="state">State / Region *</label>
+            <select id="state" name="state" required>
+              <option value="">Select your state</option>
+              <option value="Abia">Abia</option>
+              <option value="Adamawa">Adamawa</option>
+              <option value="Akwa Ibom">Akwa Ibom</option>
+              <option value="Anambra">Anambra</option>
+              <option value="Bauchi">Bauchi</option>
+              <option value="Bayelsa">Bayelsa</option>
+              <option value="Benue">Benue</option>
+              <option value="Borno">Borno</option>
+              <option value="Cross River">Cross River</option>
+              <option value="Delta">Delta</option>
+              <option value="Ebonyi">Ebonyi</option>
+              <option value="Edo">Edo</option>
+              <option value="Ekiti">Ekiti</option>
+              <option value="Enugu">Enugu</option>
+              <option value="FCT">FCT Abuja</option>
+              <option value="Gombe">Gombe</option>
+              <option value="Imo">Imo</option>
+              <option value="Jigawa">Jigawa</option>
+              <option value="Kaduna">Kaduna</option>
+              <option value="Kano">Kano</option>
+              <option value="Katsina">Katsina</option>
+              <option value="Kebbi">Kebbi</option>
+              <option value="Kogi">Kogi</option>
+              <option value="Kwara">Kwara</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Nasarawa">Nasarawa</option>
+              <option value="Niger">Niger</option>
+              <option value="Ogun">Ogun</option>
+              <option value="Ondo">Ondo</option>
+              <option value="Osun">Osun</option>
+              <option value="Oyo">Oyo</option>
+              <option value="Plateau">Plateau</option>
+              <option value="Rivers">Rivers</option>
+              <option value="Sokoto">Sokoto</option>
+              <option value="Taraba">Taraba</option>
+              <option value="Yobe">Yobe</option>
+              <option value="Zamfara">Zamfara</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantity Needed *</label>
+            <select id="quantity" name="quantity" required>
+              <option value="">Select package</option>
+              <option value="1 Bottle - ₦25,000">1 Bottle - ₦25,000</option>
+              <option value="2 Bottles + Diet Plan - ₦40,000">
+                2 Bottles + Diet Plan - ₦40,000
+              </option>
+              <option value="3 Bottles + Diet Plan - ₦50,000">
+                3 Bottles + Diet Plan - ₦50,000 (Most Popular)
+              </option>
+              <option value="4 Bottles + Diet Plan - ₦65,000">
+                4 Bottles + Diet Plan - ₦65,000
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="delivery">Delivery Duration *</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input
+                  type="radio"
+                  name="delivery"
+                  value="Within 24hrs"
+                  required
+                />
+                <span>Within 24 hours</span>
+              </label>
+              <label class="radio-label">
+                <input
+                  type="radio"
+                  name="delivery"
+                  value="Within 48hrs"
+                  required
+                />
+                <span>Within 48 hours</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-guarantee">
+            <p>🛡️ Your information is 100% secure and will never be shared</p>
+            <p>✓ Money-Back Guarantee • ✓ Free Nationwide Delivery</p>
+          </div>
+
+          <button type="submit" class="btn-submit">Submit My Order Now</button>
+
+          <p class="form-note">
+            After submitting, we'll contact you within 2 hours to confirm your
+            order and arrange payment & delivery.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3 class="faq-question">How long does it take to see results?</h3>
+            <p class="faq-answer">
+              Most patients notice visible changes within 10 days—reduced
+              thirst, less urination, more energy. Blood sugar levels typically
+              stabilize within 30 days or less. Results may vary based on
+              individual conditions.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Does DiaPro work for both Type 1 and Type 2 diabetes?
+            </h3>
+            <p class="faq-answer">
+              Yes! DiaPro is specially formulated to work effectively for BOTH
+              Type 1 and Type 2 diabetes. Our natural ingredients support
+              insulin production, improve insulin sensitivity, and regulate
+              blood sugar regardless of diabetes type.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Is DiaPro safe?</h3>
+            <p class="faq-answer">
+              Absolutely! DiaPro is made from 100% natural ingredients,
+              clinically tested, and approved by both NAFDAC and FDA. It has no
+              known side effects and is safe for long-term use.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Can I stop taking my diabetes medication?
+            </h3>
+            <p class="faq-answer">
+              Many of our customers have reduced or eliminated their medications
+              under their doctor's supervision. We recommend monitoring your
+              blood sugar closely and consulting with your healthcare provider
+              before making any changes to your medication regimen.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">How do I take DiaPro?</h3>
+            <p class="faq-answer">
+              Take 2 capsules daily with water—one in the morning and one in the
+              evening, preferably with meals. Full instructions are included
+              with your order, plus a FREE diabetes diet plan.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Will my diabetes come back?</h3>
+            <p class="faq-answer">
+              DiaPro not only controls blood sugar but addresses the root causes
+              of diabetes by improving insulin function and metabolic health.
+              Many customers maintain normal blood sugar levels long after
+              completing treatment, especially when combined with healthy
+              lifestyle choices.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Do you deliver nationwide?</h3>
+            <p class="faq-answer">
+              Yes! We deliver to all 36 states in Nigeria including FCT Abuja.
+              Delivery is FREE and takes 24-48 hours depending on your location.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">What if it doesn't work for me?</h3>
+            <p class="faq-answer">
+              We offer a 100% money-back guarantee. If you don't see significant
+              improvement in your blood sugar levels after completing the full
+              treatment as directed, simply contact us for a full refund—no
+              questions asked.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Can I take it with other medications?</h3>
+            <p class="faq-answer">
+              DiaPro is natural and generally safe to combine with other
+              medications. However, because it effectively lowers blood sugar,
+              we recommend consulting with your healthcare provider and
+              monitoring your blood sugar closely to avoid hypoglycemia.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">How many bottles do I need?</h3>
+            <p class="faq-answer">
+              We recommend at least 2-3 bottles for optimal results. The
+              3-bottle package (90-day supply) is our most popular choice and
+              provides the best value for complete diabetes reversal and
+              prevention of complications.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Will it prevent diabetes complications?
+            </h3>
+            <p class="faq-answer">
+              Yes! By controlling blood sugar and improving overall metabolic
+              health, DiaPro helps prevent serious complications like kidney
+              failure, blindness, nerve damage, heart disease, and amputation.
+              Early intervention is key.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">When will I receive my order?</h3>
+            <p class="faq-answer">
+              Orders are processed immediately and delivered within 24-48 hours
+              depending on your selected delivery option and location. We'll
+              provide tracking information once shipped.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+      <div class="container">
+        <h2>Don't Let Diabetes Control Your Life Any Longer</h2>
+        <p class="cta-text">
+          Join over 3,200 diabetes patients who have successfully lowered their
+          blood sugar, eliminated medications, and regained control of their
+          health with DiaPro.
+        </p>
+
+        <div class="cta-benefits">
+          <div class="cta-benefit">✓ NAFDAC & FDA Approved</div>
+          <div class="cta-benefit">✓ 100% Natural & Safe</div>
+          <div class="cta-benefit">✓ Money-Back Guarantee</div>
+          <div class="cta-benefit">✓ Free Nationwide Delivery</div>
+        </div>
+
+        <div class="urgency-text">
+          <p>⏰ Limited time discount ends soon</p>
+          <p>
+            ⚠️ Only <strong id="stockCountFinal">6</strong> bottles left at this
+            price
+          </p>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="#order-form" class="btn-primary-large"
+            >Order Now - Save ₦5,000</a
+          >
+          <a
+            href="https://wa.me/2347050362587?text=Hello,%20I%20want%20to%20order%20DiaPro"
+            class="btn-whatsapp-large"
+            target="_blank"
+            >Order via WhatsApp</a
+          >
+        </div>
+
+        <p class="cta-guarantee">🛡️ Risk-Free 30-Day Money-Back Guarantee</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>DIAPRO</h3>
+            <p>Natural solution for Type 1 & Type 2 diabetes</p>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>📞 <a href="tel:07050362587">07050362587</a></p>
+            <p>
+              💬
+              <a href="https://wa.me/2347050362587" target="_blank"
+                >WhatsApp Us</a
+              >
+            </p>
+            <p>⏰ Available 24/7</p>
+          </div>
+
+          <div class="footer-guarantee">
+            <h4>Our Guarantee</h4>
+            <p>✓ NAFDAC & FDA Approved</p>
+            <p>✓ 100% Money-Back Guarantee</p>
+            <p>✓ Free Nationwide Delivery</p>
+            <p>✓ Secure Payment Options</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="disclaimer">
+            Disclaimer: Results may vary from person to person. This product is
+            not intended to diagnose, treat, cure, or prevent any disease.
+            Always consult with a healthcare professional before starting any
+            new supplement regimen, especially if you're currently on diabetes
+            medication.
+          </p>
+          <p class="copyright">&copy; 2024 DiaPro. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="diapro-script.js"></script>
+  </body>
+</html>
