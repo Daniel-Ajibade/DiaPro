@@ -11,20 +11,6 @@
       content="DiaPro: NAFDAC & FDA approved natural treatment for Type 1 and Type 2 diabetes. Lower blood sugar, regulate insulin, prevent complications. See results in 10 days. Money-back guarantee."
     />
     <link rel="stylesheet" href="diapro-style.css" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-17965983722"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-17965983722");
-    </script>
   </head>
   <body>
     <!-- Live Visitor Counter Bar -->
@@ -35,12 +21,12 @@
 
     <!-- Floating WhatsApp Button -->
     <a
-      href="https://wa.me/2347026386176?text=Hello,%20I%20want%20to%20order%20DiaPro"
+      href="https://wa.me/2348071022471?text=Hello,%20Dr%20Rose%20I%20want%20to%20order%20For%20DiaPro%20Diabetes%20Solution"
       class="whatsapp-float"
       target="_blank"
       rel="noopener"
     >
-      <span class="whatsapp-text">Order on WhatsApp</span>
+      <span class="whatsapp-text">Chat With a Doctor</span>
       <span class="whatsapp-icon">
         <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
           <path
@@ -150,8 +136,8 @@
               <a href="#order-form" class="btn-primary"
                 >Order Now - Limited Discount</a
               >
-              <a href="tel:07026386176" class="btn-secondary"
-                >📞 Call: 07026386176</a
+              <a href="tel:08071022471" class="btn-secondary"
+                >📞 Call: 08071022471</a
               >
             </div>
 
@@ -940,155 +926,96 @@
         />
 
         <form
-          class="order-form"
-          id="orderFormElement"
-          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          id="orderForm"
+          action="https://formspree.io/f/xjgjvgzk"
           method="POST"
         >
-          <div class="form-group">
-            <label for="fullName">Full Name *</label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              required
-              placeholder="Enter your full name"
-            />
-          </div>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
 
-          <div class="form-group">
-            <label for="deliveryAddress"
-              >Your Location / Delivery Address *</label
-            >
-            <textarea
-              id="deliveryAddress"
-              name="deliveryAddress"
-              required
-              placeholder="Enter your complete delivery address"
-              rows="3"
-            ></textarea>
-          </div>
+          <label for="phone">Primary Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="08012345678"
+            pattern="\d{11}"
+            minlength="11"
+            maxlength="11"
+            required
+          />
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="phoneNumber">Your Phone Number *</label>
-              <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-                required
-                placeholder="08012345678"
-              />
-            </div>
+          <label for="alt-phone">Alternative Phone Number</label>
+          <input
+            type="tel"
+            name="alt-phone"
+            id="alt-phone"
+            placeholder="08012345678"
+            pattern="\d{11}"
+            minlength="11"
+            maxlength="11"
+            required
+          />
 
-            <div class="form-group">
-              <label for="phoneNumberConfirm">Confirm Phone Number *</label>
-              <input
-                type="tel"
-                id="phoneNumberConfirm"
-                name="phoneNumberConfirm"
-                required
-                placeholder="08012345678"
-              />
-            </div>
-          </div>
+          <label for="state">State</label>
+          <select
+            name="state"
+            id="state"
+            required
+            style="width: 100%; padding: 10px; margin-bottom: 10px"
+          >
+            <option value="">-- Select Your State --</option>
+          </select>
 
-          <div class="form-group">
-            <label for="state">State / Region *</label>
-            <select id="state" name="state" required>
-              <option value="">Select your state</option>
-              <option value="Abia">Abia</option>
-              <option value="Adamawa">Adamawa</option>
-              <option value="Akwa Ibom">Akwa Ibom</option>
-              <option value="Anambra">Anambra</option>
-              <option value="Bauchi">Bauchi</option>
-              <option value="Bayelsa">Bayelsa</option>
-              <option value="Benue">Benue</option>
-              <option value="Borno">Borno</option>
-              <option value="Cross River">Cross River</option>
-              <option value="Delta">Delta</option>
-              <option value="Ebonyi">Ebonyi</option>
-              <option value="Edo">Edo</option>
-              <option value="Ekiti">Ekiti</option>
-              <option value="Enugu">Enugu</option>
-              <option value="FCT">FCT Abuja</option>
-              <option value="Gombe">Gombe</option>
-              <option value="Imo">Imo</option>
-              <option value="Jigawa">Jigawa</option>
-              <option value="Kaduna">Kaduna</option>
-              <option value="Kano">Kano</option>
-              <option value="Katsina">Katsina</option>
-              <option value="Kebbi">Kebbi</option>
-              <option value="Kogi">Kogi</option>
-              <option value="Kwara">Kwara</option>
-              <option value="Lagos">Lagos</option>
-              <option value="Nasarawa">Nasarawa</option>
-              <option value="Niger">Niger</option>
-              <option value="Ogun">Ogun</option>
-              <option value="Ondo">Ondo</option>
-              <option value="Osun">Osun</option>
-              <option value="Oyo">Oyo</option>
-              <option value="Plateau">Plateau</option>
-              <option value="Rivers">Rivers</option>
-              <option value="Sokoto">Sokoto</option>
-              <option value="Taraba">Taraba</option>
-              <option value="Yobe">Yobe</option>
-              <option value="Zamfara">Zamfara</option>
-            </select>
-          </div>
+          <label for="lga">Local Government Area (LGA)</label>
+          <select
+            name="lga"
+            id="lga"
+            required
+            style="width: 100%; padding: 10px; margin-bottom: 10px"
+            disabled
+          >
+            <option value="">-- Select State First --</option>
+          </select>
 
-          <div class="form-group">
-            <label for="quantity">Quantity Needed *</label>
-            <select id="quantity" name="quantity" required>
-              <option value="">Select package</option>
-              <option value="1 Bottle - ₦25,000">1 Bottle - ₦25,000</option>
-              <option value="2 Bottles + Diet Plan - ₦40,000">
-                2 Bottles + Diet Plan - ₦40,000
-              </option>
-              <option value="3 Bottles + Diet Plan - ₦50,000">
-                3 Bottles + Diet Plan - ₦50,000 (Most Popular)
-              </option>
-              <option value="4 Bottles + Diet Plan - ₦65,000">
-                4 Bottles + Diet Plan - ₦65,000
-              </option>
-            </select>
-          </div>
+          <label for="quantity">Select Number of Bottles</label>
+          <select
+            name="quantity"
+            id="quantity"
+            required
+            style="width: 100%; padding: 10px; margin-bottom: 10px"
+          >
+            <option value="">-- Choose Quantity --</option>
+            <option value="1 Bottle of DiaPro - ₦25,000">
+              1 Bottle - ₦25,000
+            </option>
+            <option value="2 Bottles of DiaPro - ₦40,000">
+              2 Bottles - ₦40,000
+            </option>
+            <option value="3 Bottles of DiaPro - ₦50,000">
+              3 Bottles - ₦50,000
+            </option>
+            <option value="4 Bottles of DiaPro - ₦65,000">
+              4 Bottles - ₦65,000
+            </option>
+          </select>
 
-          <div class="form-group">
-            <label for="delivery">Delivery Duration *</label>
-            <div class="radio-group">
-              <label class="radio-label">
-                <input
-                  type="radio"
-                  name="delivery"
-                  value="Within 24hrs"
-                  required
-                />
-                <span>Within 24 hours</span>
-              </label>
-              <label class="radio-label">
-                <input
-                  type="radio"
-                  name="delivery"
-                  value="Within 48hrs"
-                  required
-                />
-                <span>Within 48 hours</span>
-              </label>
-            </div>
-          </div>
+          <label for="address">Delivery Address</label>
+          <textarea
+            name="address"
+            id="address"
+            rows="3"
+            placeholder="Enter your full delivery address"
+            required
+          ></textarea>
 
-          <div class="form-guarantee">
-            <p>🛡️ Your information is 100% secure and will never be shared</p>
-            <p>✓ Money-Back Guarantee • ✓ Free Nationwide Delivery</p>
-          </div>
-
-          <button type="submit" class="btn-submit">Submit My Order Now</button>
-
-          <p class="form-note">
-            After submitting, we'll contact you within 2 hours to confirm your
-            order and arrange payment & delivery.
-          </p>
+          <button type="submit">Submit Order</button>
         </form>
       </div>
     </section>
@@ -1254,7 +1181,7 @@
             >Order Now - Save ₦5,000</a
           >
           <a
-            href="https://wa.me/2347026386176?text=Hello,%20I%20want%20to%20order%20DiaPro"
+            href="https://wa.me/2348071022471?text=Hello,%20I%20want%20to%20order%20DiaPro"
             class="btn-whatsapp-large"
             target="_blank"
             >Order via WhatsApp</a
@@ -1276,10 +1203,10 @@
 
           <div class="footer-contact">
             <h4>Contact Us</h4>
-            <p>📞 <a href="tel:07026386176">07026386176</a></p>
+            <p>📞 <a href="tel:08071022471">08071022471</a></p>
             <p>
               💬
-              <a href="https://wa.me/2347026386176" target="_blank"
+              <a href="https://wa.me/2348071022471" target="_blank"
                 >WhatsApp Us</a
               >
             </p>
