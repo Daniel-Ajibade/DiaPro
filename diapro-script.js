@@ -110,56 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ============================================
     // DISCOUNT MODAL
-    // ============================================
-    const discountModal = document.getElementById('discountModal');
-    const modalClose = document.getElementById('modalClose');
-    let modalShown = false;
-
-    // Function to show modal
-    function showModal() {
-        if (!modalShown) {
-            discountModal.classList.add('active');
-            modalShown = true;
-            // Prevent body scroll when modal is open
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    // Function to hide modal
-    function hideModal() {
-        discountModal.classList.remove('active');
-        // Restore body scroll
-        document.body.style.overflow = 'auto';
-    }
-
-    // Show modal after 10 seconds
-    setTimeout(showModal, 20000);
-
-    // Close modal when X is clicked
-    modalClose.addEventListener('click', hideModal);
-
-    // Close modal when clicking outside the modal content
-    discountModal.addEventListener('click', function (e) {
-        if (e.target === discountModal) {
-            hideModal();
-        }
-    });
-
-    // Exit Intent - Show modal when user tries to leave
-    let exitIntentShown = false;
-    document.addEventListener('mouseleave', function (e) {
-        // Check if mouse is leaving from the top of the page
-        if (e.clientY <= 0 && !exitIntentShown && !discountModal.classList.contains('active')) {
-            showModal();
-            exitIntentShown = true;
-        }
-    });
-
-    // Modal links - close modal when "Claim My Discount Now" is clicked
-    const modalCTA = document.querySelector('.modal-cta');
-    if (modalCTA) {
-        modalCTA.addEventListener('click', hideModal);
-    }
 
     // ============================================
     // COUNTDOWN TIMER (Modal & Pricing Section)
