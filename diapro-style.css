@@ -1660,6 +1660,18 @@ body {
   background: #0f6e56;
 }
 
+#orderForm select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  pointer-events: auto;
+  background-image: url("data:image/svg+xml,...");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
 .form-note {
   text-align: center;
   font-size: 13px;

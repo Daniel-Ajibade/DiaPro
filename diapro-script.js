@@ -17,6 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const count = Math.floor(Math.random() * (70 - 40 + 1)) + 40;
         visitorCountElement.textContent = count;
     }
+    document.getElementById("stickyCtaBtn").addEventListener("click", function () {
+        const orderForm = document.getElementById("orderForm");
+
+        if (orderForm) {
+            orderForm.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
 
     // Update visitor count every 8-12 seconds (random interval)
     function scheduleVisitorUpdate() {
@@ -362,7 +372,6 @@ document.addEventListener('DOMContentLoaded', function () {
             alert("Something went wrong. Please try again.");
         }
     });
-
     // ============================================
     // SCROLL ANIMATIONS (Fade In On Scroll)
     // ============================================
@@ -453,17 +462,6 @@ if ('loading' in HTMLImageElement.prototype) {
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
     document.body.appendChild(script);
 }
-
-document.getElementById("stickyCtaBtn").addEventListener("click", function () {
-    const orderForm = document.getElementById("orderForm");
-
-    if (orderForm) {
-        orderForm.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-    }
-});
 
 
 // ============================================
